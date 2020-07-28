@@ -1,0 +1,116 @@
+version 2
+run exponential-13-20200728-16:27:54-4596
+attr configname exponential
+attr datetime 20200728-16:27:54
+attr experiment exponential
+attr inifile consegna.ini
+attr iterationvars "$lamb=0.7, $expo=0.25"
+attr iterationvarsf lamb=0.7,expo=0.25-
+attr measurement "$lamb=0.7, $expo=0.25"
+attr network Network
+attr processid 4596
+attr repetition 13
+attr replication #13
+attr resultdir results
+attr runnumber 13
+attr seedset 13
+itervar expo 0.25
+itervar lamb 0.7
+param **.source.interArrivalTime exponential(0.7s)
+param **.queue.serviceTime 0s
+param **.SPTF.serviceTime exponential(0.25s)
+
+scalar Network.source created:last 142180
+attr interpolationmode none
+attr title "the number of jobs created, last"
+scalar Network.SPTF busy:timeavg 0.35620631732761
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar Network.SPTF queueingTime:mean 0.099706886865004
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar Network.SPTF queueingTime:max 7.06251487093
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar Network.SPTF queueLength:timeavg 0.15769166818061
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar Network.SPTF queueLength:max 8
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar Network.SPTF dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar Network.queue busy:timeavg 0
+attr interpolationmode sample-hold
+attr title "server busy state, timeavg"
+scalar Network.queue queueingTime:mean 0
+attr interpolationmode none
+attr title "queueing time at dequeue, mean"
+attr unit s
+scalar Network.queue queueingTime:max 0
+attr interpolationmode none
+attr title "queueing time at dequeue, max"
+attr unit s
+scalar Network.queue queueLength:timeavg nan
+attr interpolationmode sample-hold
+attr title "queue length, timeavg"
+scalar Network.queue queueLength:max nan
+attr interpolationmode sample-hold
+attr title "queue length, max"
+scalar Network.queue dropped:count 0
+attr interpolationmode none
+attr title "drop event, count"
+scalar Network.sink generation:mean 0
+attr interpolationmode none
+attr title "the generation of the arrived jobs, mean"
+scalar Network.sink generation:max 0
+attr interpolationmode none
+attr title "the generation of the arrived jobs, max"
+scalar Network.sink delaysVisited:mean 0
+attr interpolationmode none
+attr title "the total number of delays visited by arrived jobs, mean"
+scalar Network.sink delaysVisited:max 0
+attr interpolationmode none
+attr title "the total number of delays visited by arrived jobs, max"
+scalar Network.sink queuesVisited:mean 0.35571872928459
+attr interpolationmode none
+attr title "the total number of queues visited by arrived jobs, mean"
+scalar Network.sink queuesVisited:max 1
+attr interpolationmode none
+attr title "the total number of queues visited by arrived jobs, max"
+scalar Network.sink totalServiceTime:mean 0.26153597257597
+attr interpolationmode none
+attr title "the total time spent  by arrived jobs, mean"
+attr unit s
+scalar Network.sink totalServiceTime:max 5.480030111562
+attr interpolationmode none
+attr title "the total time spent  by arrived jobs, max"
+attr unit s
+scalar Network.sink totalDelayTime:mean 0
+attr interpolationmode none
+attr title "the total time spent in delay nodes by arrived jobs, mean"
+attr unit s
+scalar Network.sink totalDelayTime:max 0
+attr interpolationmode none
+attr title "the total time spent in delay nodes by arrived jobs, max"
+attr unit s
+scalar Network.sink totalQueueingTime:mean 0.099706160546052
+attr interpolationmode none
+attr title "the total time spent in queues by arrived jobs, mean"
+attr unit s
+scalar Network.sink totalQueueingTime:max 7.063256933863
+attr interpolationmode none
+attr title "the total time spent in queues by arrived jobs, max"
+attr unit s
+scalar Network.sink lifeTime:mean 0.36124213312201
+attr interpolationmode none
+attr title "lifetime of arrived jobs, mean"
+attr unit s
+scalar Network.sink lifeTime:max 8.071092723135
+attr interpolationmode none
+attr title "lifetime of arrived jobs, max"
+attr unit s
+
